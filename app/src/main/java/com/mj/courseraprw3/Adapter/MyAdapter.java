@@ -1,4 +1,5 @@
-package com.mj.courseraprw3;
+package com.mj.courseraprw3.Adapter;
+
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,9 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import com.mj.courseraprw3.R;
+import com.mj.courseraprw3.pets;
 
-import static android.R.id.list;
+import java.util.ArrayList;
 
 /**
  * Created by leyenda1 on 16/09/2016.
@@ -26,17 +28,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         public TextView  nName;
         public TextView  mLikes;
         public ImageView mImageView;
+
         public ViewHolder(View view) {
             super(view);
             nName      = (TextView)  view.findViewById(R.id.actvPetName);
             mLikes     = (TextView)  view.findViewById(R.id.actvLikes);
             mImageView = (ImageView) view.findViewById(R.id.acivPetPicture);
         }
+
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
     public MyAdapter(ArrayList<pets> myDataset) {
-        this.mDataset = myDataset;
+        this.mDataset     = myDataset;
     }
 
     // Create new views (invoked by the layout manager)

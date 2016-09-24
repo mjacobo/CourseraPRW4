@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Toast;
+
+import com.mj.courseraprw3.Adapter.MyAdapter;
 
 import java.util.ArrayList;
 
@@ -44,6 +48,5 @@ public class top_five extends AppCompatActivity {
         myPetList.add(new pets("Turkky",19, R.drawable.turkey));
         myPetList.add(new pets("Zebry",20, R.drawable.zebra));
     }
-
 
 }

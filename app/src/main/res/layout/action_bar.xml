@@ -9,6 +9,7 @@
     android:elevation="@dimen/accbar_elevation"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_scrollFlags="scroll|enterAlways"
 >
 
  <LinearLayout
@@ -57,16 +58,6 @@
       android:onClick="showTopFive"
       />
 
-  <android.support.v7.widget.AppCompatImageView
-      android:id="@+id/activity"
-      android:layout_width="@dimen/image_layout_width"
-      android:layout_height="wrap_content"
-      android:cropToPadding="true"
-      android:src="@mipmap/ic_list_black"
-      android:background="@color/colorPrimary"
-      android:layout_gravity="center"
-      android:layout_weight="1"
-      />
 
  </LinearLayout>
 

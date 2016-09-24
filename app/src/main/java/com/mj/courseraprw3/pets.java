@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class pets {
     private String  name;
     private Integer likes;
-    private Integer picture;
+    private int picture;
 
     public String getName() {
         return name;
@@ -23,11 +23,11 @@ public class pets {
         return likes;
     }
 
-    public void setLikes(Integer likes) {
+    public void setLikes(int likes) {
         this.likes = likes;
     }
 
-    public Integer getPicture() {
+    public int getPicture() {
         return picture;
     }
 
